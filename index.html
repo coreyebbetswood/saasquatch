@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SAASQuatch</title>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function() {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
+    </script>
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Mrs+Sheppards|Oswald:700|Roboto+Condensed|Lobster');
+    body {
+        background-color: #BFBFBF;
+        font-weight: bold;
+        color: #000000;
+    }
+    
+    #largeLogo {
+        display: block;
+        margin: 0 auto;
+        width: 33%;
+        margin-top: 60px;
+    }
+    
+    body,
+    html {
+        height: 100%;
+    }
+    
+    .bg {
+        /* The image used */
+        background-image: url("images/esportsevent.jpg");
+        /* Full height */
+        height: 100%;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .redBioSection {
+        /* background-image: url("images/toomuchred.png");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; */
+        color: white;
+        font-family: 'Bitter', serif;
+    }
+    
+    #smallLogoLink {
+        position: absolute;
+        width: 3%;
+        top: 4px;
+        left: 4px;
+    }
+    
+    #topTitle {
+        text-align: center;
+        margin: auto;
+        width: 50%;
+        font-size: 70px;
+        font-family: 'Lobster', cursive;
+        color: #f70b0b;
+    }
+    
+    #bioImage {
+        width: 70%;
+    }
+    
+    #roleImage {
+        width: 100%;
+    }
+    
+    .img-circle {
+        border-radius: 100%;
+    }
+    
+    #favoriteHero {
+        width: 60%;
+    }
+    
+    .center-block {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #arrowDown {
+        text-align: center;
+    }
+    
+    #downArrowPicture {
+        width: 5%;
+    }
+    
+    #arrowUp {
+        text-align: center;
+        min-height: 0px;
+    }
+    
+    #upArrowPicture {
+        width: 5%;
+    }
+    
+    #bioRow1 {
+        background-color: #850F0F;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    
+    #bioRow2 {
+        background-color: #9C0D12;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    
+    #bioRow3 {
+        background-color: #F70B0B;
+        padding-top: 25px;
+    }
+    
+    .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    #favoriteHeroText {
+        text-align: center;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- <img src="images/esportsevent.jpg" id="myLargeImage"> -->
+    <div class="bg">
+        <div id="topTitle">SAASQuatch</div>
+        <img src="images/saasquatchlogo.png" alt="SAASQuatch" id="largeLogo">
+        <div id="arrowDown">
+            <a href="#redBioSection">
+                <img src="images/downarrow.png" id="downArrowPicture">
+            </a>
+        </div>
+    </div>
+    <a href="index.html">
+        <img src="images/saasquatchlogo.png" id="smallLogoLink">
+    </a>
+    <div class="redBioSection" id="redBioSection">
+        <!-- <div class="row" id="arrowUp">
+            <div class="col-md-12 text-center">
+                <a href="#topTitle">
+                    <img src="images/uparrow.png" id="upArrowPicture">
+                </a>
+            </div>
+        </div> -->
+        <div id="greySpacing">
+            <br>
+            <br>
+        </div>
+        <div class="row" id="bioRow1">
+            <div class="row col-md-5">
+                <div class="col-md-12 text-center">
+                    <h3 class="text-center">Jack Edgar</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">Lorem ipsum dolor sit amet, cu eum eripuit detraxit intellegebat, sea errem tibique efficiantur id. In rebum dignissim per. Mei nemore regione cu, cu vim labores fabellas, mei.</div>
+                    <div class="col-md-4" id="bioImagePadding">
+                        <img src="images/jack.jpg" id="bioImage" class="img-circle center-block">
+                    </div>
+                    <div class="col-md-4" id="favoriteHeroText">
+                        <h3>Main</h3>
+                        <img src="images/soldierspray.png" id="favoriteHero">
+                        <h3>Soldier: 76</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-md-2">
+                <div class="col-md-12">
+                    <img src="images/dpsrole2.png" id="roleImage">
+                </div>
+            </div>
+            <div class="row col-md-5">
+                <div class="col-md-12 text-center">
+                    <h3 class="text-center">Kaden Rosenblatt</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-4" id="favoriteHeroText">
+                        <h3>Main</h3>
+                        <img src="images/genjispray2.png" id="favoriteHero">
+                        <h3>Genji</h3>
+                    </div>
+                    <div class="col-md-4" id="bioImagePadding">
+                        <img src="images/kaden.jpg" id="bioImage" class="img-circle center-block">
+                    </div>
+                    <div class="col-md-4">Lorem ipsum dolor sit amet, pro illum elitr primis ei, malis affert consequuntur ius cu, est ne viris ancillae voluptatibus. Audire liberavisse an vis. Iusto invidunt convenire mea at.</div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="bioRow2">
+            <div class="row col-md-5">
+                <div class="col-md-12 text-center">
+                    <h3 class="text-center">Theo Springer</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">Lorem ipsum dolor sit amet, civibus dolores ne mea. Impedit eleifend ut eum. Id mea delicata vulputate. At quis atomorum constituam sit, doming placerat mei no.</div>
+                    <div class="col-md-4" id="bioImagePadding">
+                        <img src="images/theo.jpg" id="bioImage" class="img-circle center-block">
+                    </div>
+                    <div class="col-md-4" id="favoriteHeroText">
+                        <h3>Main</h3>
+                        <img src="images/reinhardtspray2.png" id="favoriteHero">
+                        <h3>Reinhardt</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-md-2">
+                <div class="col-md-12">
+                    <img src="images/tankrole2.png" id="roleImage">
+                </div>
+            </div>
+            <div class="row col-md-5">
+                <div class="col-md-12 text-center">
+                    <h3 class="text-center">Wyatt Wren</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-4" id="favoriteHeroText">
+                        <h3>Main</h3>
+                        <img src="images/roadhogspray2.png" id="favoriteHero">
+                        <h3>Roadhog</h3>
+                    </div>
+                    <div class="col-md-4" id="bioImagePadding">
+                        <img src="images/wyatt.jpg" id="bioImage" class="img-circle center-block">
+                    </div>
+                    <div class="col-md-4">Lorem ipsum dolor sit amet, sed alii mucius propriae an, quodsi eripuit blandit ei eam. Mutat gubergren gloriatur ne vim, sea cu augue veniam, no ius invidunt argumentum.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="bioRow3">
+            <div class="row col-md-5">
+                <div class="col-md-12 text-center">
+                    <h3 class="text-center">Corey Wood</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">Lorem ipsum dolor sit amet, his meis assum interesset ad, lorem graeci nostrud at quo. Vis cu fabellas invenire accusamus, no magna congue has vim diam impetus no. </div>
+                    <div class="col-md-4" id="bioImagePadding">
+                        <img src="images/corey.jpg" id="bioImage" class="img-circle center-block">
+                    </div>
+                    <div class="col-md-4" id="favoriteHeroText">
+                        <h3>Main</h3>
+                        <img src="images/mercyspray.png" id="favoriteHero">
+                        <h3>Mercy</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-md-2">
+                <div class="col-md-12">
+                    <img src="images/healrole2.png" id="roleImage">
+                </div>
+            </div>
+            <div class="row col-md-5">
+                <div class="col-md-12 text-center">
+                    <h3 class="text-center">Derek Eng</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-4" id="favoriteHeroText">
+                        <h3>Main</h3>
+                        <img src="images/anaspray.png" id="favoriteHero">
+                        <h3>Ana</h3>
+                    </div>
+                    <div class="col-md-4" id="bioImagePadding">
+                        <img src="images/derek.jpg" id="bioImage" class="img-circle center-block">
+                    </div>
+                    <div class="col-md-4">Lorem ipsum dolor sit amet, et percipit pertinax gloriatur sea. Quo id putent apeirian, qui tota choro propriae te, at docendi mnesarchum cum an alia habemus.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
